@@ -18,6 +18,10 @@ def downloadSAMP():
     webbrowser.open('https://gta-max.com/576-skachat_sa_mp_0_3_7_samp.html')
 
 
+def openMods():
+    webbrowser.open('https://gtavicecity.ru')
+
+
 window = Tk()
 window.title('"GTA SAMP • РУССКИЙ ДРИФТ СЕРВЕР • RDS •" - Launcher 32bit')
 window.resizable(width=False, height=False)
@@ -48,5 +52,10 @@ butDownloadSAMP = Button(window, text='''Загрузить клиент
 SAMP 0.3.7''')
 butDownloadSAMP.config(width=22, height=2, bg='gainsboro', fg='black', command=downloadSAMP)
 butDownloadSAMP.place(x=470, y=206)
+
+but = Button(window, text='''Установить доп.
+модификации''')
+but.config(width=22, height=2, bg='gainsboro', fg='black', command=openMods)
+but.place(x=470, y=248)
 
 window.mainloop()
